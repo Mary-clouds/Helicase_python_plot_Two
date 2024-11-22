@@ -15,6 +15,10 @@ plt.plot(x_achse, pcc_two, label ='PCC 7005 (n=4)', color = 'y')
 
 # fix the x-axis ticks to show integers from 1 to 20
 plt.xticks(ticks=range(1, 21), labels=range(1, 21))
+
+# Adjust the layout to prevemt labels from being cut off
+plt.tight_layout()
+
 #add label and title
 plt.title('with Helicase')
 plt.xlabel('Cycles')

@@ -27,6 +27,6 @@ plt.ylabel ('dRn')
 plt.legend()
 
 #saving the plot as jpg
-plt.savefig('with Helicase.jpg', dpi = 400)
+plt.savefig('with Helicase_plot.jpg', dpi = 400)
 #display the plot
 plt.show()

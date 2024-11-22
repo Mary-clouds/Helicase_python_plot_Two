@@ -10,17 +10,18 @@ x_achse = list (range(1, 21))
 #styling and plotting
 plt.plot(x_achse, nct, label ='NCT (n=4)', color = 'b')
 plt.plot(x_achse, pcc_one, label ='PCC 7806 (n=1)', color = 'g')
-plt.plot(x_achse, cya, label ='CYA 126(n=1)', color = 'r')
+plt.plot(x_achse, cya, label ='CYA 126 (n=1)', color = 'r')
 plt.plot(x_achse, pcc_two, label ='PCC 7005 (n=4)', color = 'y')
 
-
+# fix the x-axis ticks to show integers from 1 to 20
+plt.xticks(ticks=range(1, 21), labels=range(1, 21))
 #add label and title
-plt.title = 'with Helicase'
-plt.xlabel ='Cycles'
-plt.ylabel = 'dRn'
+plt.title('with Helicase')
+plt.xlabel('Cycles')
+plt.ylabel ('dRn')
 plt.legend()
 
 #saving the plot as jpg
-plt.savefig('with Helicase.jpg')
+plt.savefig('with Helicase.jpg', dpi = 400)
 #display the plot
 plt.show()

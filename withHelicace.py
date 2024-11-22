@@ -8,7 +8,8 @@ pcc_two=[75.00004217]*20
 
 x_achse = list (range(1, 21))
 #styling and plotting
-plt.plot(x_achse, nct, label ='NCT (n=4)', color = 'b')
+#plt.plot(x_achse, nct, label ='NCT (n=4)', color = 'b', linewidth=4)
+plt.fill_between(x_achse, nct, [val - 1 for val in nct], color='b', alpha=0.3, label='NCT (n=4)')
 plt.plot(x_achse, pcc_one, label ='PCC 7806 (n=1)', color = 'g')
 plt.plot(x_achse, cya, label ='CYA 126 (n=1)', color = 'r')
 plt.plot(x_achse, pcc_two, label ='PCC 7005 (n=4)', color = 'y')
